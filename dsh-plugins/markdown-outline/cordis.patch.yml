@@ -1,0 +1,6 @@
+# dsh-markdown-outline bundle patch: inserts the markdown_outline tool row.
+# Rows reference the installed package name; Node resolves it through the
+# profile's node_modules.
+- insert:
+    - id: markdown-outline
+      name: 'dsh-markdown-outline'

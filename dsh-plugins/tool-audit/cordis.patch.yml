@@ -1,0 +1,4 @@
+# dsh-tool-audit bundle patch: inserts the audit listener row.
+- insert:
+    - id: tool-audit
+      name: 'dsh-tool-audit'
