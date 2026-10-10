@@ -6,6 +6,15 @@ Audit plugin for DeepSeek Harness: observes every settled tool call on the
 
 ## Install
 
+From a fresh clone, install dev dependencies and build the runtime first (the
+profile consumes `lib/`, which git does not carry):
+
+```sh
+pnpm install --ignore-workspace && pnpm run build
+```
+
+Then register the bundle with your profile:
+
 ```sh
 dsh plugin --profile web add <path-to-this-package>
 ```
