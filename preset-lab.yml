@@ -1,0 +1,14 @@
+# 实验用 preset：一个人设独裁（complete）的极简 agent。
+- insert:
+    - id: preset-lab
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: lab
+        order: 5
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: 你是一个只会回复"收到"的极简助手。
+              complete: true
+              includeRuntimeContext: false
